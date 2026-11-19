@@ -1,0 +1,1566 @@
+{
+ "meta": {
+  "start": "2025-01-01",
+  "end": "2026-12-31",
+  "has_themes": true,
+  "n_events": 28230.0
+ },
+ "countries": [
+  {
+   "country": "Akrotiri and Dhekelia",
+   "peaceful": 2.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 2.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Albania",
+   "peaceful": 52.0,
+   "intervention": 1.0,
+   "excessive": 0.0,
+   "violent": 1.0,
+   "total": 54.0,
+   "intervention_rate": 1.9,
+   "excessive_rate": 0.0,
+   "violence_rate": 1.9,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Andorra",
+   "peaceful": 3.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 3.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Austria",
+   "peaceful": 148.0,
+   "intervention": 14.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 162.0,
+   "intervention_rate": 8.6,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Négociée"
+  },
+  {
+   "country": "Bailiwick of Guernsey",
+   "peaceful": 1.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 1.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Bailiwick of Jersey",
+   "peaceful": 3.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 3.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Belarus",
+   "peaceful": 1.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 1.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Belgium",
+   "peaceful": 835.0,
+   "intervention": 34.0,
+   "excessive": 1.0,
+   "violent": 22.0,
+   "total": 892.0,
+   "intervention_rate": 3.9,
+   "excessive_rate": 0.1,
+   "violence_rate": 2.5,
+   "family": "Négociée"
+  },
+  {
+   "country": "Bosnia and Herzegovina",
+   "peaceful": 199.0,
+   "intervention": 1.0,
+   "excessive": 0.0,
+   "violent": 4.0,
+   "total": 204.0,
+   "intervention_rate": 0.5,
+   "excessive_rate": 0.0,
+   "violence_rate": 2.0,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Bulgaria",
+   "peaceful": 650.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 2.0,
+   "total": 652.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.3,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Croatia",
+   "peaceful": 144.0,
+   "intervention": 3.0,
+   "excessive": 0.0,
+   "violent": 5.0,
+   "total": 152.0,
+   "intervention_rate": 2.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 3.3,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Cyprus",
+   "peaceful": 210.0,
+   "intervention": 6.0,
+   "excessive": 0.0,
+   "violent": 15.0,
+   "total": 231.0,
+   "intervention_rate": 2.6,
+   "excessive_rate": 0.0,
+   "violence_rate": 6.5,
+   "family": "Confrontationnelle"
+  },
+  {
+   "country": "Czech Republic",
+   "peaceful": 172.0,
+   "intervention": 6.0,
+   "excessive": 0.0,
+   "violent": 2.0,
+   "total": 180.0,
+   "intervention_rate": 3.3,
+   "excessive_rate": 0.0,
+   "violence_rate": 1.1,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Denmark",
+   "peaceful": 219.0,
+   "intervention": 23.0,
+   "excessive": 0.0,
+   "violent": 1.0,
+   "total": 243.0,
+   "intervention_rate": 9.5,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.4,
+   "family": "Négociée"
+  },
+  {
+   "country": "Estonia",
+   "peaceful": 19.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 19.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Faroe Islands",
+   "peaceful": 1.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 1.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Finland",
+   "peaceful": 190.0,
+   "intervention": 11.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 201.0,
+   "intervention_rate": 5.5,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Négociée"
+  },
+  {
+   "country": "France",
+   "peaceful": 5367.0,
+   "intervention": 115.0,
+   "excessive": 1.0,
+   "violent": 158.0,
+   "total": 5641.0,
+   "intervention_rate": 2.1,
+   "excessive_rate": 0.0,
+   "violence_rate": 2.8,
+   "family": "Confrontationnelle"
+  },
+  {
+   "country": "Germany",
+   "peaceful": 2298.0,
+   "intervention": 102.0,
+   "excessive": 1.0,
+   "violent": 127.0,
+   "total": 2528.0,
+   "intervention_rate": 4.1,
+   "excessive_rate": 0.0,
+   "violence_rate": 5.0,
+   "family": "Négociée"
+  },
+  {
+   "country": "Greece",
+   "peaceful": 1088.0,
+   "intervention": 14.0,
+   "excessive": 0.0,
+   "violent": 82.0,
+   "total": 1184.0,
+   "intervention_rate": 1.2,
+   "excessive_rate": 0.0,
+   "violence_rate": 6.9,
+   "family": "Confrontationnelle"
+  },
+  {
+   "country": "Greenland",
+   "peaceful": 10.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 10.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Hungary",
+   "peaceful": 166.0,
+   "intervention": 12.0,
+   "excessive": 0.0,
+   "violent": 1.0,
+   "total": 179.0,
+   "intervention_rate": 6.7,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.6,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Iceland",
+   "peaceful": 65.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 65.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Négociée"
+  },
+  {
+   "country": "Ireland",
+   "peaceful": 166.0,
+   "intervention": 8.0,
+   "excessive": 0.0,
+   "violent": 2.0,
+   "total": 176.0,
+   "intervention_rate": 4.5,
+   "excessive_rate": 0.0,
+   "violence_rate": 1.1,
+   "family": "Négociée"
+  },
+  {
+   "country": "Isle of Man",
+   "peaceful": 2.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 2.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Italy",
+   "peaceful": 2622.0,
+   "intervention": 45.0,
+   "excessive": 0.0,
+   "violent": 97.0,
+   "total": 2764.0,
+   "intervention_rate": 1.6,
+   "excessive_rate": 0.0,
+   "violence_rate": 3.5,
+   "family": "Confrontationnelle"
+  },
+  {
+   "country": "Kosovo",
+   "peaceful": 61.0,
+   "intervention": 3.0,
+   "excessive": 0.0,
+   "violent": 2.0,
+   "total": 66.0,
+   "intervention_rate": 4.5,
+   "excessive_rate": 0.0,
+   "violence_rate": 3.0,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Latvia",
+   "peaceful": 26.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 26.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Lithuania",
+   "peaceful": 81.0,
+   "intervention": 1.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 82.0,
+   "intervention_rate": 1.2,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Luxembourg",
+   "peaceful": 49.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 49.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Négociée"
+  },
+  {
+   "country": "Malta",
+   "peaceful": 44.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 44.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Confrontationnelle"
+  },
+  {
+   "country": "Moldova",
+   "peaceful": 142.0,
+   "intervention": 12.0,
+   "excessive": 0.0,
+   "violent": 6.0,
+   "total": 160.0,
+   "intervention_rate": 7.5,
+   "excessive_rate": 0.0,
+   "violence_rate": 3.8,
+   "family": "Non classé"
+  },
+  {
+   "country": "Monaco",
+   "peaceful": 1.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 1.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Montenegro",
+   "peaceful": 167.0,
+   "intervention": 2.0,
+   "excessive": 0.0,
+   "violent": 4.0,
+   "total": 173.0,
+   "intervention_rate": 1.2,
+   "excessive_rate": 0.0,
+   "violence_rate": 2.3,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Netherlands",
+   "peaceful": 729.0,
+   "intervention": 97.0,
+   "excessive": 0.0,
+   "violent": 38.0,
+   "total": 864.0,
+   "intervention_rate": 11.2,
+   "excessive_rate": 0.0,
+   "violence_rate": 4.4,
+   "family": "Négociée"
+  },
+  {
+   "country": "North Macedonia",
+   "peaceful": 131.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 1.0,
+   "total": 132.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.8,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Norway",
+   "peaceful": 402.0,
+   "intervention": 26.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 428.0,
+   "intervention_rate": 6.1,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Négociée"
+  },
+  {
+   "country": "Poland",
+   "peaceful": 557.0,
+   "intervention": 25.0,
+   "excessive": 0.0,
+   "violent": 59.0,
+   "total": 641.0,
+   "intervention_rate": 3.9,
+   "excessive_rate": 0.0,
+   "violence_rate": 9.2,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Portugal",
+   "peaceful": 282.0,
+   "intervention": 4.0,
+   "excessive": 0.0,
+   "violent": 3.0,
+   "total": 289.0,
+   "intervention_rate": 1.4,
+   "excessive_rate": 0.0,
+   "violence_rate": 1.0,
+   "family": "Confrontationnelle"
+  },
+  {
+   "country": "Romania",
+   "peaceful": 373.0,
+   "intervention": 3.0,
+   "excessive": 0.0,
+   "violent": 8.0,
+   "total": 384.0,
+   "intervention_rate": 0.8,
+   "excessive_rate": 0.0,
+   "violence_rate": 2.1,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Russia",
+   "peaceful": 321.0,
+   "intervention": 25.0,
+   "excessive": 1.0,
+   "violent": 8.0,
+   "total": 355.0,
+   "intervention_rate": 7.3,
+   "excessive_rate": 0.3,
+   "violence_rate": 2.3,
+   "family": "Non classé"
+  },
+  {
+   "country": "San Marino",
+   "peaceful": 3.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 0.0,
+   "total": 3.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.0,
+   "family": "Non classé"
+  },
+  {
+   "country": "Serbia",
+   "peaceful": 2545.0,
+   "intervention": 90.0,
+   "excessive": 22.0,
+   "violent": 66.0,
+   "total": 2723.0,
+   "intervention_rate": 4.1,
+   "excessive_rate": 0.8,
+   "violence_rate": 2.4,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Slovakia",
+   "peaceful": 320.0,
+   "intervention": 1.0,
+   "excessive": 0.0,
+   "violent": 2.0,
+   "total": 323.0,
+   "intervention_rate": 0.3,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.6,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Slovenia",
+   "peaceful": 82.0,
+   "intervention": 0.0,
+   "excessive": 0.0,
+   "violent": 3.0,
+   "total": 85.0,
+   "intervention_rate": 0.0,
+   "excessive_rate": 0.0,
+   "violence_rate": 3.5,
+   "family": "Est & Balkans"
+  },
+  {
+   "country": "Spain",
+   "peaceful": 3441.0,
+   "intervention": 30.0,
+   "excessive": 1.0,
+   "violent": 62.0,
+   "total": 3534.0,
+   "intervention_rate": 0.9,
+   "excessive_rate": 0.0,
+   "violence_rate": 1.8,
+   "family": "Confrontationnelle"
+  },
+  {
+   "country": "Sweden",
+   "peaceful": 824.0,
+   "intervention": 13.0,
+   "excessive": 0.0,
+   "violent": 2.0,
+   "total": 839.0,
+   "intervention_rate": 1.5,
+   "excessive_rate": 0.0,
+   "violence_rate": 0.2,
+   "family": "Négociée"
+  },
+  {
+   "country": "Switzerland",
+   "peaceful": 175.0,
+   "intervention": 5.0,
+   "excessive": 1.0,
+   "violent": 19.0,
+   "total": 200.0,
+   "intervention_rate": 3.0,
+   "excessive_rate": 0.5,
+   "violence_rate": 9.5,
+   "family": "Négociée"
+  },
+  {
+   "country": "Ukraine",
+   "peaceful": 337.0,
+   "intervention": 4.0,
+   "excessive": 0.0,
+   "violent": 13.0,
+   "total": 354.0,
+   "intervention_rate": 1.1,
+   "excessive_rate": 0.0,
+   "violence_rate": 3.7,
+   "family": "Non classé"
+  },
+  {
+   "country": "United Kingdom",
+   "peaceful": 813.0,
+   "intervention": 69.0,
+   "excessive": 1.0,
+   "violent": 42.0,
+   "total": 925.0,
+   "intervention_rate": 7.6,
+   "excessive_rate": 0.1,
+   "violence_rate": 4.5,
+   "family": "Négociée"
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2025-01",
+   "family": "Confrontationnelle",
+   "excessive": 0,
+   "intervention": 19,
+   "peaceful": 1130,
+   "violent": 28,
+   "total": 1177
+  },
+  {
+   "month": "2025-01",
+   "family": "Est & Balkans",
+   "excessive": 3,
+   "intervention": 16,
+   "peaceful": 618,
+   "violent": 14,
+   "total": 651
+  },
+  {
+   "month": "2025-01",
+   "family": "Non classé",
+   "excessive": 0,
+   "intervention": 0,
+   "peaceful": 58,
+   "violent": 0,
+   "total": 58
+  },
+  {
+   "month": "2025-01",
+   "family": "Négociée",
+   "excessive": 0,
+   "intervention": 21,
+   "peaceful": 627,
+   "violent": 24,
+   "total": 672
+  },
+  {
+   "month": "2025-02",
+   "family": "Confrontationnelle",
+   "excessive": 0,
+   "intervention": 8,
+   "peaceful": 1428,
+   "violent": 23,
+   "total": 1459
+  },
+  {
+   "month": "2025-02",
+   "family": "Est & Balkans",
+   "excessive": 1,
+   "intervention": 9,
+   "peaceful": 750,
+   "violent": 11,
+   "total": 771
+  },
+  {
+   "month": "2025-02",
+   "family": "Non classé",
+   "excessive": 0,
+   "intervention": 3,
+   "peaceful": 62,
+   "violent": 1,
+   "total": 66
+  },
+  {
+   "month": "2025-02",
+   "family": "Négociée",
+   "excessive": 2,
+   "intervention": 33,
+   "peaceful": 896,
+   "violent": 18,
+   "total": 949
+  },
+  {
+   "month": "2025-03",
+   "family": "Confrontationnelle",
+   "excessive": 0,
+   "intervention": 15,
+   "peaceful": 1739,
+   "violent": 49,
+   "total": 1803
+  },
+  {
+   "month": "2025-03",
+   "family": "Est & Balkans",
+   "excessive": 1,
+   "intervention": 12,
+   "peaceful": 675,
+   "violent": 14,
+   "total": 702
+  },
+  {
+   "month": "2025-03",
+   "family": "Non classé",
+   "excessive": 0,
+   "intervention": 4,
+   "peaceful": 113,
+   "violent": 0,
+   "total": 117
+  },
+  {
+   "month": "2025-03",
+   "family": "Négociée",
+   "excessive": 1,
+   "intervention": 27,
+   "peaceful": 866,
+   "violent": 24,
+   "total": 918
+  },
+  {
+   "month": "2025-04",
+   "family": "Confrontationnelle",
+   "excessive": 0,
+   "intervention": 7,
+   "peaceful": 1107,
+   "violent": 50,
+   "total": 1164
+  },
+  {
+   "month": "2025-04",
+   "family": "Est & Balkans",
+   "excessive": 2,
+   "intervention": 14,
+   "peaceful": 488,
+   "violent": 12,
+   "total": 516
+  },
+  {
+   "month": "2025-04",
+   "family": "Non classé",
+   "excessive": 0,
+   "intervention": 2,
+   "peaceful": 83,
+   "violent": 2,
+   "total": 87
+  },
+  {
+   "month": "2025-04",
+   "family": "Négociée",
+   "excessive": 0,
+   "intervention": 48,
+   "peaceful": 664,
+   "violent": 29,
+   "total": 741
+  },
+  {
+   "month": "2025-05",
+   "family": "Confrontationnelle",
+   "excessive": 1,
+   "intervention": 24,
+   "peaceful": 1510,
+   "violent": 31,
+   "total": 1566
+  },
+  {
+   "month": "2025-05",
+   "family": "Est & Balkans",
+   "excessive": 0,
+   "intervention": 10,
+   "peaceful": 481,
+   "violent": 13,
+   "total": 504
+  },
+  {
+   "month": "2025-05",
+   "family": "Non classé",
+   "excessive": 0,
+   "intervention": 2,
+   "peaceful": 72,
+   "violent": 2,
+   "total": 76
+  },
+  {
+   "month": "2025-05",
+   "family": "Négociée",
+   "excessive": 0,
+   "intervention": 38,
+   "peaceful": 867,
+   "violent": 34,
+   "total": 939
+  },
+  {
+   "month": "2025-06",
+   "family": "Confrontationnelle",
+   "excessive": 0,
+   "intervention": 15,
+   "peaceful": 1308,
+   "violent": 25,
+   "total": 1348
+  },
+  {
+   "month": "2025-06",
+   "family": "Est & Balkans",
+   "excessive": 4,
+   "intervention": 15,
+   "peaceful": 418,
+   "violent": 14,
+   "total": 451
+  },
+  {
+   "month": "2025-06",
+   "family": "Non classé",
+   "excessive": 0,
+   "intervention": 3,
+   "peaceful": 85,
+   "violent": 3,
+   "total": 91
+  },
+  {
+   "month": "2025-06",
+   "family": "Négociée",
+   "excessive": 0,
+   "intervention": 49,
+   "peaceful": 617,
+   "violent": 30,
+   "total": 696
+  },
+  {
+   "month": "2025-07",
+   "family": "Confrontationnelle",
+   "excessive": 0,
+   "intervention": 15,
+   "peaceful": 780,
+   "violent": 61,
+   "total": 856
+  },
+  {
+   "month": "2025-07",
+   "family": "Est & Balkans",
+   "excessive": 5,
+   "intervention": 24,
+   "peaceful": 567,
+   "violent": 23,
+   "total": 619
+  },
+  {
+   "month": "2025-07",
+   "family": "Non classé",
+   "excessive": 0,
+   "intervention": 10,
+   "peaceful": 150,
+   "violent": 5,
+   "total": 165
+  },
+  {
+   "month": "2025-07",
+   "family": "Négociée",
+   "excessive": 0,
+   "intervention": 51,
+   "peaceful": 547,
+   "violent": 24,
+   "total": 622
+  },
+  {
+   "month": "2025-08",
+   "family": "Confrontationnelle",
+   "excessive": 1,
+   "intervention": 6,
+   "peaceful": 537,
+   "violent": 22,
+   "total": 566
+  },
+  {
+   "month": "2025-08",
+   "family": "Est & Balkans",
+   "excessive": 4,
+   "intervention": 19,
+   "peaceful": 555,
+   "violent": 41,
+   "total": 619
+  },
+  {
+   "month": "2025-08",
+   "family": "Non classé",
+   "excessive": 0,
+   "intervention": 12,
+   "peaceful": 104,
+   "violent": 7,
+   "total": 123
+  },
+  {
+   "month": "2025-08",
+   "family": "Négociée",
+   "excessive": 0,
+   "intervention": 44,
+   "peaceful": 574,
+   "violent": 27,
+   "total": 645
+  },
+  {
+   "month": "2025-09",
+   "family": "Confrontationnelle",
+   "excessive": 0,
+   "intervention": 72,
+   "peaceful": 1878,
+   "violent": 71,
+   "total": 2021
+  },
+  {
+   "month": "2025-09",
+   "family": "Est & Balkans",
+   "excessive": 2,
+   "intervention": 12,
+   "peaceful": 717,
+   "violent": 11,
+   "total": 742
+  },
+  {
+   "month": "2025-09",
+   "family": "Non classé",
+   "excessive": 1,
+   "intervention": 4,
+   "peaceful": 56,
+   "violent": 4,
+   "total": 65
+  },
+  {
+   "month": "2025-09",
+   "family": "Négociée",
+   "excessive": 1,
+   "intervention": 36,
+   "peaceful": 561,
+   "violent": 20,
+   "total": 618
+  },
+  {
+   "month": "2025-10",
+   "family": "Confrontationnelle",
+   "excessive": 0,
+   "intervention": 33,
+   "peaceful": 1637,
+   "violent": 57,
+   "total": 1727
+  },
+  {
+   "month": "2025-10",
+   "family": "Est & Balkans",
+   "excessive": 0,
+   "intervention": 17,
+   "peaceful": 476,
+   "violent": 7,
+   "total": 500
+  },
+  {
+   "month": "2025-10",
+   "family": "Non classé",
+   "excessive": 0,
+   "intervention": 1,
+   "peaceful": 44,
+   "violent": 3,
+   "total": 48
+  },
+  {
+   "month": "2025-10",
+   "family": "Négociée",
+   "excessive": 0,
+   "intervention": 55,
+   "peaceful": 694,
+   "violent": 23,
+   "total": 772
+  }
+ ],
+ "themes": [
+  {
+   "theme": "Agriculture",
+   "country": "Belgium",
+   "n": 14,
+   "v": 0
+  },
+  {
+   "theme": "Agriculture",
+   "country": "Bulgaria",
+   "n": 7,
+   "v": 0
+  },
+  {
+   "theme": "Agriculture",
+   "country": "France",
+   "n": 238,
+   "v": 3
+  },
+  {
+   "theme": "Agriculture",
+   "country": "Germany",
+   "n": 9,
+   "v": 0
+  },
+  {
+   "theme": "Agriculture",
+   "country": "Greece",
+   "n": 170,
+   "v": 3
+  },
+  {
+   "theme": "Agriculture",
+   "country": "Italy",
+   "n": 60,
+   "v": 0
+  },
+  {
+   "theme": "Agriculture",
+   "country": "Netherlands",
+   "n": 13,
+   "v": 0
+  },
+  {
+   "theme": "Agriculture",
+   "country": "Poland",
+   "n": 30,
+   "v": 0
+  },
+  {
+   "theme": "Agriculture",
+   "country": "Serbia",
+   "n": 92,
+   "v": 3
+  },
+  {
+   "theme": "Agriculture",
+   "country": "Spain",
+   "n": 54,
+   "v": 0
+  },
+  {
+   "theme": "Agriculture",
+   "country": "United Kingdom",
+   "n": 74,
+   "v": 0
+  },
+  {
+   "theme": "Autre",
+   "country": "Belgium",
+   "n": 211,
+   "v": 5
+  },
+  {
+   "theme": "Autre",
+   "country": "Bulgaria",
+   "n": 407,
+   "v": 1
+  },
+  {
+   "theme": "Autre",
+   "country": "France",
+   "n": 2179,
+   "v": 84
+  },
+  {
+   "theme": "Autre",
+   "country": "Germany",
+   "n": 752,
+   "v": 52
+  },
+  {
+   "theme": "Autre",
+   "country": "Greece",
+   "n": 190,
+   "v": 35
+  },
+  {
+   "theme": "Autre",
+   "country": "Italy",
+   "n": 1059,
+   "v": 45
+  },
+  {
+   "theme": "Autre",
+   "country": "Netherlands",
+   "n": 172,
+   "v": 9
+  },
+  {
+   "theme": "Autre",
+   "country": "Poland",
+   "n": 186,
+   "v": 3
+  },
+  {
+   "theme": "Autre",
+   "country": "Serbia",
+   "n": 1326,
+   "v": 48
+  },
+  {
+   "theme": "Autre",
+   "country": "Spain",
+   "n": 1167,
+   "v": 28
+  },
+  {
+   "theme": "Autre",
+   "country": "Sweden",
+   "n": 144,
+   "v": 1
+  },
+  {
+   "theme": "Autre",
+   "country": "United Kingdom",
+   "n": 260,
+   "v": 8
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Belgium",
+   "n": 46,
+   "v": 1
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Bulgaria",
+   "n": 10,
+   "v": 0
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "France",
+   "n": 234,
+   "v": 3
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Germany",
+   "n": 192,
+   "v": 1
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Greece",
+   "n": 4,
+   "v": 0
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Italy",
+   "n": 127,
+   "v": 5
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Netherlands",
+   "n": 138,
+   "v": 2
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Poland",
+   "n": 37,
+   "v": 0
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Serbia",
+   "n": 17,
+   "v": 0
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Spain",
+   "n": 149,
+   "v": 1
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "Sweden",
+   "n": 340,
+   "v": 0
+  },
+  {
+   "theme": "Climat & environnement",
+   "country": "United Kingdom",
+   "n": 30,
+   "v": 0
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Belgium",
+   "n": 44,
+   "v": 0
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Bulgaria",
+   "n": 87,
+   "v": 0
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "France",
+   "n": 190,
+   "v": 3
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Germany",
+   "n": 185,
+   "v": 3
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Greece",
+   "n": 193,
+   "v": 6
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Italy",
+   "n": 86,
+   "v": 2
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Netherlands",
+   "n": 31,
+   "v": 0
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Poland",
+   "n": 33,
+   "v": 0
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Serbia",
+   "n": 1047,
+   "v": 12
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Spain",
+   "n": 539,
+   "v": 0
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "Sweden",
+   "n": 19,
+   "v": 0
+  },
+  {
+   "theme": "Démocratie & institutions",
+   "country": "United Kingdom",
+   "n": 60,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Belgium",
+   "n": 15,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Bulgaria",
+   "n": 8,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "France",
+   "n": 57,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Germany",
+   "n": 110,
+   "v": 8
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Greece",
+   "n": 2,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Italy",
+   "n": 24,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Netherlands",
+   "n": 11,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Poland",
+   "n": 38,
+   "v": 2
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Serbia",
+   "n": 2,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Spain",
+   "n": 21,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "Sweden",
+   "n": 15,
+   "v": 0
+  },
+  {
+   "theme": "Guerre en Ukraine",
+   "country": "United Kingdom",
+   "n": 7,
+   "v": 0
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Belgium",
+   "n": 29,
+   "v": 3
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Bulgaria",
+   "n": 5,
+   "v": 0
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "France",
+   "n": 244,
+   "v": 13
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Germany",
+   "n": 594,
+   "v": 33
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Greece",
+   "n": 15,
+   "v": 9
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Italy",
+   "n": 74,
+   "v": 9
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Netherlands",
+   "n": 98,
+   "v": 14
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Poland",
+   "n": 184,
+   "v": 54
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Serbia",
+   "n": 8,
+   "v": 2
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Spain",
+   "n": 107,
+   "v": 9
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "Sweden",
+   "n": 24,
+   "v": 0
+  },
+  {
+   "theme": "Migration & identité",
+   "country": "United Kingdom",
+   "n": 147,
+   "v": 16
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Belgium",
+   "n": 156,
+   "v": 6
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Bulgaria",
+   "n": 1,
+   "v": 0
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "France",
+   "n": 419,
+   "v": 1
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Germany",
+   "n": 253,
+   "v": 27
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Greece",
+   "n": 200,
+   "v": 12
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Italy",
+   "n": 751,
+   "v": 25
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Netherlands",
+   "n": 272,
+   "v": 9
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Poland",
+   "n": 35,
+   "v": 0
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Serbia",
+   "n": 6,
+   "v": 0
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Spain",
+   "n": 522,
+   "v": 9
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "Sweden",
+   "n": 86,
+   "v": 1
+  },
+  {
+   "theme": "Palestine / Gaza",
+   "country": "United Kingdom",
+   "n": 168,
+   "v": 11
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Belgium",
+   "n": 377,
+   "v": 7
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Bulgaria",
+   "n": 127,
+   "v": 1
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "France",
+   "n": 2080,
+   "v": 51
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Germany",
+   "n": 433,
+   "v": 3
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Greece",
+   "n": 410,
+   "v": 17
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Italy",
+   "n": 583,
+   "v": 11
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Netherlands",
+   "n": 129,
+   "v": 4
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Poland",
+   "n": 98,
+   "v": 0
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Serbia",
+   "n": 225,
+   "v": 1
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Spain",
+   "n": 975,
+   "v": 15
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "Sweden",
+   "n": 211,
+   "v": 0
+  },
+  {
+   "theme": "Social & retraites",
+   "country": "United Kingdom",
+   "n": 179,
+   "v": 7
+  }
+ ],
+ "variance": [
+  {
+   "label": "Pays",
+   "eta2": 0.012727714384188148
+  },
+  {
+   "label": "Tradition de maintien de l'ordre (famille)",
+   "eta2": 0.00020344385344079946
+  },
+  {
+   "label": "Mois",
+   "eta2": 0.0031281959627506785
+  },
+  {
+   "label": "Revendication",
+   "eta2": 0.015763990636957687
+  },
+  {
+   "label": "Pays + revendication",
+   "eta2": 0.05200983580544399
+  }
+ ]
+}
