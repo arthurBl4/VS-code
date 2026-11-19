@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Violence on the margins of European protests, January–October 2025</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+<style>
+  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#f5f7fa;color:#1e293b;position:relative}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:#0f1b33}
+  .card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:1.5rem}
+  :focus-visible{outline:2px solid #0f766e;outline-offset:2px}
+  .hm td{min-width:64px;text-align:center;font-size:12px;padding:6px 4px}
+  
+  /* Dynamic thematic element (fixed "tension gauge" on the side) */
+  #tensionMeter {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 180px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    z-index: 50;
+    overflow: hidden;
+    display: none;
+  }
+  @media(min-width: 1280px) { #tensionMeter { display: block; } }
+  #tensionFill {
+    width: 100%;
+    height: 0%;
+    background: #731f1f;
+    transition: height 0.1s ease-out;
+  }
+</style>
+</head>
+<body>
+
+<!-- Dynamic tension gauge (scroll effect) -->
+<div id="tensionMeter" title="Reading progress and public-order tension">
+  <div id="tensionFill"></div>
+</div>
+
+<header class="bg-[#731f1f] text-white">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+    <p class="text-sm text-slate-200">ACLED data, Europe, January to October 2025</p>
+    <h1 class="text-3xl md:text-5xl font-bold mt-3 !text-white leading-tight max-w-3xl">Does violence at the margins of protests stem from the claims being made, or from national policing traditions?</h1>
+    <p class="mt-4 text-slate-200 max-w-2xl">Two hypotheses are put to the test: the nature of the demands carried by the crowd, or the public-order tradition specific to each country. The charts below settle the question with numbers.</p>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-6 py-8 space-y-8">
+  <div id="err" class="hidden card border-rose-300 text-rose-700"><b>The data could not be displayed.</b> Run <code>scripts/process_data.py</code>, then start the site with <code>python app.py</code>.<p id="errDetail" class="mt-2 font-mono text-xs"></p></div>
+
+  <!-- Illustration card with the local image -->
+  <section class="card overflow-hidden p-0">
+    <div class="grid md:grid-cols-2 items-center">
+      <div class="p-8">
+        <span class="inline-block px-3 py-1 text-xs font-semibold bg-red-50 text-[#731f1f] rounded-full mb-3">European comparative analysis</span>
+        <h3 class="text-2xl font-bold mb-3">Crowd dynamics and public-order doctrines</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          By cross-referencing thousands of events recorded by ACLED, this dashboard isolates the impact of national policing traditions against purely thematic readings of social conflict.
+        </p>
+      </div>
+      <div class="h-64 md:h-72 bg-slate-200">
+        <img src="{{ url_for('static', filename='illustration.jpg') }}" 
+             alt="Political context and protests in France" 
+             class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <section class="grid md:grid-cols-2 gap-4">
+    <div class="card"><h3 class="font-bold text-lg">H1: the effect of claims</h3><p class="text-sm mt-2 text-slate-600">Some causes (climate, Gaza, pensions, agriculture) would attract more radical crowds or counter-demonstrators, and therefore more violence, whatever the country.</p></div>
+    <div class="card"><h3 class="font-bold text-lg">H2: the effect of policing traditions</h3><p class="text-sm mt-2 text-slate-600">According to della Porta and Reiter, an “escalated force” style of policing provokes clashes that “negotiated management” avoids. Violence would then depend on the country, not on the cause.</p></div>
+  </section>
+
+  <form id="filters" class="card flex flex-wrap items-end gap-4" aria-label="Dashboard filters">
+    <label class="text-sm">Scope of the indicators
+      <select id="countrySelect" name="country" class="block mt-1 px-3 py-2 border border-slate-300 rounded-lg bg-white"><option value="ALL">All of Europe</option></select></label>
+    <label class="text-sm">Sort the ranking by
+      <select id="sortSelect" name="sort" class="block mt-1 px-3 py-2 border border-slate-300 rounded-lg bg-white">
+        <option value="total">Number of events</option>
+        <option value="intervention_rate">Repression rate</option>
+        <option value="violence_rate">Violence rate</option></select></label>
+    <label class="text-sm grow min-w-[220px]">Countries included: at least <b id="minVal">50</b> events
+      <input id="minRange" name="min" type="range" min="0" max="1000" step="10" value="50" class="block w-full mt-2 accent-teal-700"></label>
+    <button id="resetBtn" type="button" class="px-4 py-2 text-sm bg-slate-100 hover:bg-slate-200 rounded-lg">Reset</button>
+  </form>
+
+  <section class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="card"><p class="text-sm text-slate-500">Peaceful gatherings <span id="badge" class="ml-1 px-2 py-0.5 text-xs rounded-full bg-slate-100">Europe</span></p><p id="kP" class="text-3xl font-bold text-teal-700 mt-2">–</p></div>
+    <div class="card"><p class="text-sm text-slate-500">Police repression<br><span class="text-xs">intervention or excessive force</span></p><p id="kR" class="text-3xl font-bold text-amber-600 mt-1">–</p></div>
+    <div class="card"><p class="text-sm text-slate-500">Violent demonstrations<br><span class="text-xs">riots and mob violence</span></p><p id="kV" class="text-3xl font-bold text-rose-700 mt-1">–</p></div>
+    <div class="card"><p class="text-sm text-slate-500">Statistical correlations<br><span class="text-xs">Pearson, Spearman &amp; 95% CI</span></p><p id="kC" class="text-base font-bold text-slate-800 mt-1">–</p></div>
+  </section>
+
+  <section class="card">
+    <h2 class="text-xl font-bold">Repression and violence, country by country</h2>
+    <p class="text-sm text-slate-500 mb-4">Each bubble is a country; its size is the number of events and its colour the policing tradition. If countries of the same family cluster together, tradition matters.</p>
+    <div class="relative h-[420px]"><canvas id="scatter"></canvas></div>
+    <p id="scatterNote" class="text-sm mt-3 text-slate-600"></p>
+    
+    <!-- Robustness table by threshold -->
+    <div class="mt-6 pt-6 border-t border-slate-100">
+      <h3 class="text-md font-bold mb-2">Robustness of the correlation to the event threshold</h3>
+      <p class="text-xs text-slate-500 mb-3">Sensitivity check of the coefficients (Pearson and Spearman) to the minimum number of events per country.</p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs border border-slate-200 rounded">
+          <thead class="bg-slate-50 text-slate-600">
+            <tr>
+              <th class="p-2 border-b">Min. threshold</th>
+              <th class="p-2 border-b">Number of countries (N)</th>
+              <th class="p-2 border-b">Pearson (r)</th>
+              <th class="p-2 border-b">95% CI (Pearson)</th>
+              <th class="p-2 border-b">Spearman (ρ)</th>
+            </tr>
+          </thead>
+          <tbody id="robustnessBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="text-xl font-bold">Socio-economic context (World Bank API)</h2>
+    <p class="text-sm text-slate-500 mb-4">Queries the World Bank API for the countries retained by the threshold above, then compares the chosen indicator with the violence rate and the repression rate. Latest available year for each country.</p>
+    <form id="contextForm" class="flex flex-wrap items-end gap-4" aria-label="Context indicator">
+      <label class="text-sm">Indicator
+        <select id="indicatorSelect" name="indicator" class="block mt-1 px-3 py-2 border border-slate-300 rounded-lg bg-white">
+          <option value="NY.GDP.PCAP.PP.CD">GDP per capita (PPP)</option>
+          <option value="SI.POV.GINI">Gini index</option>
+          <option value="SL.UEM.TOTL.ZS">Unemployment</option>
+        </select></label>
+      <button type="submit" class="px-4 py-2 text-sm text-white bg-[#731f1f] hover:bg-[#5a1818] rounded-lg">Query the API</button>
+    </form>
+    <p id="contextStatus" class="text-sm text-slate-500 mt-3" role="status"></p>
+    <div id="contextResult" class="mt-3"></div>
+  </section>
+
+  <details id="complements" class="space-y-8">
+    <summary class="card cursor-pointer font-semibold text-slate-700 list-none">Further analyses: variance, claims by country, ranking, monthly trend <span class="text-slate-400 font-normal">(click to expand)</span></summary>
+    <div class="space-y-8 mt-8">
+    <section class="card">
+      <h2 class="text-xl font-bold">What explains violence? Variance decomposition</h2>
+      <p class="text-sm text-slate-500 mb-4">Share of the variance in whether an event is “violent” explained by each factor (η²). Country and family measure H2; the claim measures H1.</p>
+      <div id="variance" class="space-y-3"></div>
+      <p id="verdict" class="mt-5 p-4 rounded-lg bg-slate-50 border border-slate-200 text-sm"></p>
+    </section>
+  
+    <section class="card">
+      <h2 class="text-xl font-bold">Does the cause matter within the same country?</h2>
+      <p class="text-sm text-slate-500 mb-4">Violence rate by claim and by country. Read down each column: if a country stays dark or light whatever the cause, its policing context dominates.</p>
+      <div id="heat" class="overflow-x-auto"></div>
+    </section>
+  
+    <section class="grid lg:grid-cols-2 gap-8">
+      <div class="card"><h2 class="text-xl font-bold">Ranking</h2><p class="text-sm text-slate-500 mb-3">Top twelve countries by the chosen criterion.</p><div class="relative h-96"><canvas id="bars"></canvas></div></div>
+      <div class="card"><h2 class="text-xl font-bold">Monthly trend</h2><p class="text-sm text-slate-500 mb-3">Violence rate by policing tradition.</p><div class="relative h-96"><canvas id="monthly"></canvas></div><p id="monthlyNote" class="text-sm text-amber-700 mt-2"></p></div>
+    </section>
+    </div>
+  </details>
+
+  <section class="card p-0 overflow-hidden">
+    <div class="p-6 flex flex-wrap gap-4 justify-between items-center border-b border-slate-100">
+      <div><h2 class="text-xl font-bold">Data by country</h2><p class="text-sm text-slate-500">Click a column header to sort.</p></div>
+      <input id="searchInput" placeholder="Filter a country" class="px-4 py-2 text-sm border border-slate-300 rounded-lg w-full md:w-72">
+    </div>
+    <div class="overflow-x-auto"><table class="w-full text-left text-sm">
+      <thead class="bg-slate-50 text-slate-500"><tr id="thead"></tr></thead>
+      <tbody id="tbody" class="divide-y divide-slate-100"></tbody></table></div>
+  </section>
+
+  <section class="card text-sm leading-relaxed text-slate-700 space-y-3">
+    <h2 class="text-xl font-bold">Method and limitations</h2>
+    <p><b>Definitions.</b> “Repression” = police interventions + excessive force against protesters. “Violence” = riots (“Violent demonstration”) and mob violence (“Mob violence”). Every rate uses the country’s total number of events as its denominator, which makes them comparable.</p>
+    <p><b>Typology of traditions.</b> Grouping countries into families is indicative, inspired by della Porta and Reiter (negotiated policing versus escalated force). It is debatable, notably for the United Kingdom and Spain.</p>
+    <p><b>Limitations.</b> ACLED captures violent events better than calm gatherings, which inflates the rates. Claims are classified by keywords in the event notes, with a margin of error. Repression and violence feed each other: the correlation does not say which comes first. Countries with small samples give unstable rates, hence the adjustable minimum threshold above. A family groups several countries, so its η² stays below that of the country.</p>
+  </section>
+</main>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
